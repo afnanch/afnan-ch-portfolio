@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-brand-green: #00FF88;
+  --color-brand-emerald: #00C853;
+  --color-dark-bg: #0A0A0A;
+  --color-dark-card: #151515;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0A0A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+/* Custom premium ambient lighting animations */
+@keyframes ambient-pulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1.1);
+  }
+}
+
+.ambient-glow {
+  animation: ambient-pulse 8s infinite ease-in-out;
+}
+
