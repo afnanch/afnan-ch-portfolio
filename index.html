@@ -1,13 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afnan CH - Digital Marketing Specialist &amp; Web Developer</title>
+<meta name="description" content="Afnan CH is a digital marketing specialist and web developer from Kerala, India. Founder of Armancarts. 60K+ followers grown, 10M+ monthly views, 5,000+ leads generated.">
+<meta property="og:title" content="Afnan CH - Digital Marketing Specialist & Web Developer">
+<meta property="og:description" content="Founder of Armancarts. 60K+ followers grown, 10M+ monthly views, 5,000+ leads generated.">
+<meta property="og:image" content="https://afnanch.in/afnan.jpg">
+<meta property="og:url" content="https://afnanch.in/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90' font-family='Georgia'>A</text></svg>">
+<style>
+  :root{
+    --ink:#17150f;
+    --muted:#6b675c;
+    --faint:#a8a294;
+    --line:#e7e3d9;
+    --paper:#fbfaf7;
+    --link:#1a56db;
+    --link-hover:#0f3aa8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;line-height:1.65;
+    padding:56px 24px 64px;
+  }
+  main{max-width:660px;margin:0 auto}
+  a{color:var(--link);text-decoration:none}
+  a:hover{color:var(--link-hover);text-decoration:underline}
 
+  /* hero */
+  .hero{display:flex;gap:36px;align-items:flex-start;justify-content:space-between}
+  .hero-text{flex:1;min-width:0}
+  .portrait{
+    width:172px;height:215px;object-fit:cover;object-position:top;
+    border-radius:14px;box-shadow:0 10px 30px rgba(23,21,15,.14);
+    border:1px solid var(--line);flex-shrink:0;
+  }
+  h1{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:40px;font-weight:600;letter-spacing:-.01em;line-height:1.15;
+  }
+  .tagline{margin-top:8px;font-size:18px;color:var(--ink)}
+  .loc{margin-top:4px;color:var(--muted);font-size:15px}
+  .contact{margin-top:18px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15.5px}
+
+  section{margin-top:44px}
+  h2{
+    font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  }
+  p{margin-bottom:12px}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:6px}
+  .stat b{display:block;font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.01em}
+  .stat span{font-size:13px;color:var(--muted);line-height:1.35;display:block;margin-top:2px}
+
+  ul.roles{list-style:none}
+  ul.roles li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;justify-content:space-between;align-items:baseline}
+  ul.roles li:last-child{border-bottom:none}
+  .role-name{font-size:16px}
+  .role-name small{display:block;color:var(--muted);font-size:14px;margin-top:1px}
+  .role-when{color:var(--faint);font-size:13.5px;white-space:nowrap;font-variant-numeric:tabular-nums}
+
+  ul.plain{list-style:none}
+  ul.plain li{padding:6px 0}
+  ul.plain li::before{content:"-";color:var(--faint);margin-right:10px}
+
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  @media (max-width:600px){
+    body{padding:36px 20px 48px;font-size:16px}
+    .hero{flex-direction:column;gap:22px}
+    .portrait{width:150px;height:188px}
+    h1{font-size:32px}
+    .stats{grid-template-columns:repeat(2,1fr);gap:18px 14px}
+    ul.roles li{flex-direction:column;gap:2px}
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Afnan CH</h1>
+      <p class="tagline">Digital Marketing Specialist &amp; Web Developer</p>
+      <p class="loc">Kerala, India</p>
+      <nav class="contact">
+        <a href="mailto:afnan@afnanch.in">afnan@afnanch.in</a>
+        <a href="tel:+918547219061">+91 85472 19061</a>
+        <a href="https://wa.me/918547219061?text=Hi+Afnan%2C+I+found+your+website+and+would+like+to+connect." rel="noopener">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/afnanch" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/afnanch" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+    <img class="portrait" src="/afnan.jpg" alt="Portrait of Afnan CH" width="172" height="215">
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p>I'm a digital marketing specialist and web developer with 4+ years of experience growing brands online. I scaled the Sulfi Wooden Life brand from 0 to 60,000+ followers organically, generating 10M+ monthly views and 5,000+ business inquiries, and enabled page monetization earning $100+ in monthly income.</p>
+    <p>I build and run websites and e-commerce stores with WordPress, Shopify and AI-assisted development, and I've delivered professional digital marketing training in Dubai, UAE, with direct exposure to Gulf consumer behavior and Arabic-market targeting.</p>
+  </section>
+
+  <section>
+    <h2>Currently</h2>
+    <ul class="roles">
+      <li>
+        <span class="role-name">Founder &amp; Owner, <a href="https://armancarts.com" rel="noopener">Armancarts</a><small>Premium fashion &amp; accessories e-commerce - Kerala, India</small></span>
+        <span class="role-when">2026 &ndash;</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Results</h2>
+    <div class="stats">
+      <div class="stat"><b>60K+</b><span>followers grown organically</span></div>
+      <div class="stat"><b>10M+</b><span>monthly organic views</span></div>
+      <div class="stat"><b>5,000+</b><span>business inquiries generated</span></div>
+      <div class="stat"><b>500+</b><span>reels &amp; videos directed</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Previously</h2>
+    <ul class="roles">
+      <li>
+        <span class="role-name">Sales &amp; Marketing Strategist, DAFO Industries<small>Calicut - scaled <a href="https://www.instagram.com/sulfi_woodenlife" rel="noopener">@sulfi_woodenlife</a> from 0 to 60K+ followers</small></span>
+        <span class="role-when">2025 &ndash; 2026</span>
+      </li>
+      <li>
+        <span class="role-name">Digital Marketing Manager, Rahman World<small>Kozhikode</small></span>
+        <span class="role-when">2024 &ndash; 2025</span>
+      </li>
+      <li>
+        <span class="role-name">Digital Marketing Faculty Trainer, Epic Ventures (Skill Mount)<small>Bur Dubai, UAE</small></span>
+        <span class="role-when">2024 &ndash; 2025</span>
+      </li>
+      <li>
+        <span class="role-name">Digital Marketing Strategist, Softroniics<small>Calicut</small></span>
+        <span class="role-when">2023 &ndash; 2024</span>
+      </li>
+      <li>
+        <span class="role-name">Digital Marketing Intern, CB Tech<small>Kochi</small></span>
+        <span class="role-when">2022 &ndash; 2023</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul class="plain">
+      <li><a href="https://armancarts.com" rel="noopener">armancarts.com</a> - my e-commerce brand</li>
+      <li><a href="https://www.instagram.com/sulfi_woodenlife" rel="noopener">@sulfi_woodenlife</a> - brand I grew; videos I shot and directed</li>
+      <li><a href="https://www.linkedin.com/in/afnanch" rel="noopener">linkedin.com/in/afnanch</a></li>
+      <li><a href="https://github.com/afnanch" rel="noopener">github.com/afnanch</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>English &middot; Malayalam &middot; Arabic (basic)</span>
+    <span>&copy; 2026 Afnan CH</span>
+  </footer>
+
+</main>
+</body>
+</html>
