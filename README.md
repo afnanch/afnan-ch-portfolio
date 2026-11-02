@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# afnanch.in - Afnan CH
 
-# Run and deploy your AI Studio app
+Live source for **[afnanch.in](https://afnanch.in)** - the portfolio and services site of **Afnan CH**, digital marketing & Shopify developer based in Calicut, Kerala, working remotely with businesses in **Dubai, Saudi Arabia & the Gulf**.
 
-This contains everything you need to run your app locally.
+## Services
 
-View your app in AI Studio: https://ai.studio/apps/8a549b77-1188-49b9-88f9-6d36b08bc451
+- [Digital marketing in Calicut & Malappuram](https://afnanch.in/digital-marketing-calicut)
+- [Shopify development in Calicut & Malappuram](https://afnanch.in/shopify-developer-calicut)
+- [Digital marketing for Dubai, Saudi Arabia & the Gulf](https://afnanch.in/digital-marketing-dubai)
+- [Shopify development for Dubai, Saudi Arabia & the Gulf](https://afnanch.in/shopify-developer-dubai)
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Static site (HTML/CSS/JS) deployed on Vercel. Older Google AI Studio prototype is preserved on the `legacy-aistudio` branch.
