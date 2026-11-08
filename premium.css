@@ -128,7 +128,7 @@ h1,h2,h3,.display-title,.band-title{font-family:var(--p-font-display);letter-spa
 }
 .hero-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--p-purple-2);box-shadow:0 0 0 4px rgba(124,58,237,.18)}
 .hero h1,.home-hero h1{
-  font-size:clamp(46px,7.4vw,96px)!important;font-weight:800;line-height:1.0;color:var(--p-ink)!important;
+  font-size:clamp(52px,8.4vw,116px)!important;font-weight:800;line-height:1.0;color:var(--p-ink)!important;
   letter-spacing:-.035em;margin:0 0 22px;
 }
 .hero h1 .hero-role,.hero h1 .amber{
@@ -167,8 +167,8 @@ h1,h2,h3,.display-title,.band-title{font-family:var(--p-font-display);letter-spa
 }
 /* floating skill pills around the portrait */
 .p-float-pill{
-  position:absolute;z-index:3;font-family:var(--p-font-display);font-weight:700;font-size:13px;
-  padding:10px 18px;border-radius:999px;box-shadow:0 10px 24px rgba(20,18,29,.16);white-space:nowrap;
+  position:absolute;z-index:3;font-family:var(--p-font-display);font-weight:700;font-size:14px;
+  padding:11px 20px;border-radius:999px;box-shadow:0 10px 24px rgba(20,18,29,.16);white-space:nowrap;
   animation:p-bob 5s ease-in-out infinite;
 }
 .p-float-pill.lime{background:var(--p-lime);color:#14121d}
@@ -199,17 +199,19 @@ h1,h2,h3,.display-title,.band-title{font-family:var(--p-font-display);letter-spa
 
 /* ---------------- marquee band ---------------- */
 .p-marquee{
-  position:relative;margin:clamp(30px,5vw,60px) calc(50% - 50vw) 0;padding:16px 0;
-  background:var(--p-band);color:var(--p-band-ink);transform:rotate(-1.4deg);
+  position:relative;margin:clamp(30px,5vw,60px) calc(50% - 50vw) 0;padding:19px 0;
+  background:var(--p-band);color:var(--p-band-ink);transform:rotate(-2deg);
   overflow:hidden;box-shadow:0 18px 40px rgba(20,18,29,.18);
 }
 .p-marquee-track{display:flex;gap:0;width:max-content;animation:p-marquee 26s linear infinite}
 .p-marquee span{
-  font-family:var(--p-font-display);font-weight:800;font-size:clamp(17px,2.2vw,24px);letter-spacing:.06em;
+  font-family:var(--p-font-display);font-weight:800;font-size:clamp(19px,2.6vw,30px);letter-spacing:.06em;
   text-transform:uppercase;white-space:nowrap;padding:0 18px;display:inline-flex;align-items:center;gap:36px;
 }
 .p-marquee span i{font-style:normal;color:var(--p-lime)}
 @keyframes p-marquee{to{transform:translateX(-50%)}}
+.p-marquee.rev{transform:rotate(1.6deg)}
+.p-marquee.rev .p-marquee-track{animation-direction:reverse}
 
 /* ---------------- brands ---------------- */
 .company-carousel{margin:clamp(48px,7vw,84px) auto 0;max-width:var(--p-max)}
@@ -236,7 +238,7 @@ body:not(.light) .company-group img{filter:brightness(1.15)}
 /* ---------------- section headings ---------------- */
 main section{margin-top:clamp(58px,8vw,100px)}
 .display-title,h2.display-title{
-  font-size:clamp(32px,4.6vw,58px)!important;font-weight:800;line-height:1.04;color:var(--p-ink);
+  font-size:clamp(36px,5.6vw,76px)!important;font-weight:800;line-height:1.04;color:var(--p-ink);
   border:none!important;padding:0!important;margin:0 0 14px;text-transform:none;letter-spacing:-.03em;
 }
 .display-title span{background:var(--p-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -339,12 +341,15 @@ ul.plain li::before{content:"✦";color:var(--p-purple-2);font-size:11px}
 .p-projects{display:grid;grid-template-columns:1fr;gap:22px;margin-top:26px}
 @media(min-width:760px){.p-projects{grid-template-columns:1fr 1fr}}
 .p-project{
-  display:block;background:var(--p-card);border:1px solid var(--p-line);border-radius:var(--p-radius);
+  position:relative;display:block;background:var(--p-card);border:1px solid var(--p-line);border-radius:var(--p-radius);
   overflow:hidden;text-decoration:none!important;transition:transform .3s cubic-bezier(.2,.7,.3,1.15),box-shadow .3s ease;
 }
-.p-project:hover{transform:translateY(-7px) rotate(-.5deg);box-shadow:0 28px 56px rgba(20,18,29,.18)}
+.p-project:hover{transform:translateY(-7px) rotate(-.5deg);box-shadow:0 28px 56px rgba(124,58,237,.26)}
 .p-project img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .5s ease}
 .p-project:hover img{transform:scale(1.045)}
+.p-project::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:var(--p-grad);z-index:2}
+.p-project::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:2px;background:var(--p-grad);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s ease;pointer-events:none}
+.p-project:hover::after{opacity:1}
 .p-project-body{padding:20px 22px 22px}
 .p-project-body span{font-family:var(--p-font-display);font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--p-purple-2)}
 .p-project-body h3{margin:8px 0 6px;font-size:19px;font-weight:700;color:var(--p-ink)}
@@ -405,7 +410,7 @@ main>section.reveal.entered{opacity:1;transform:none}
 /* ---------------- guide pages skin ---------------- */
 .guide-hero,.pagehead{max-width:var(--p-max)}
 main .hero:not(.home-hero){padding:clamp(36px,5vw,60px) 0 10px}
-main .hero:not(.home-hero) h1{font-size:clamp(34px,5vw,60px)!important;font-weight:800;color:var(--p-ink)!important;line-height:1.05}
+main .hero:not(.home-hero) h1{font-size:clamp(40px,6vw,74px)!important;font-weight:800;color:var(--p-ink)!important;line-height:1.05}
 main .hero:not(.home-hero) h1 .amber{background:var(--p-grad);-webkit-background-clip:text;background-clip:text;color:transparent!important}
 .contact a.primary,.contact a:first-child{
   font-family:var(--p-font-display);font-weight:700;font-size:13px;background:var(--p-grad);
@@ -444,7 +449,7 @@ body.guide:not(.light)::before{background-image:radial-gradient(circle at 1px 1p
 .hero-photo{height:auto!important}
 .home-hero img.portrait{height:auto!important;mask-image:none;-webkit-mask-image:none;object-fit:contain}
 .hero-metrics>div strong{color:var(--p-ink)!important}
-body.light .company-group img{filter:none}
+body.light .company-group img{filter:brightness(.2)}
 /* contact form skin */
 .cf label{display:block;font-family:var(--p-font-display);font-weight:600;font-size:13px;color:var(--p-ink)!important;margin:18px 0 6px}
 .cf input,.cf textarea{
