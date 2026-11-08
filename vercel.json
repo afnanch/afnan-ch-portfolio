@@ -1,1 +1,1 @@
-{"installCommand":"echo skip-install","buildCommand":"echo static-site","outputDirectory":".","cleanUrls":true,"trailingSlash":false,"name":"afnan-ch-portfolio","version":2}
+{"cleanUrls": true, "trailingSlash": false}

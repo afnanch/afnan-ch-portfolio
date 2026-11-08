@@ -152,122 +152,7 @@
 }
 </script>
 <link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='0.9em' font-size='90' font-family='Georgia'&gt;A&lt;/text&gt;&lt;/svg&gt;" rel="icon"/>
-<style>
-:root{--ink:#17150f;--muted:#6b675c;--faint:#a8a294;--line:#e7e3d9;--paper:#ffffff;--link:#1a56db;--link-hover:#0f3aa8}
-*{margin:0;padding:0;box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.65}
-.wrap{max-width:660px;margin:0 auto;padding:0 20px}
-a{color:var(--link);text-decoration:none}
-a:hover{color:var(--link-hover);text-decoration:underline}
-b,strong{font-weight:600}
 
-/* shared site header */
-.sitehero{border-bottom:1px solid var(--line);padding:20px 0 16px}
-.crumb{font-size:13.5px;color:var(--faint)}
-.crumb a{color:var(--muted)}
-.brandrow{display:none}
-.sitenav{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:10px}
-.sitenav a{font-size:14.5px;color:var(--ink);text-decoration:none}
-.sitenav a:hover{color:var(--link);text-decoration:underline}
-.sitenav a.on{color:var(--link);font-weight:600}
-
-/* hero */
-.hero{padding:34px 0 0;display:flex;gap:30px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
-.hero-text{flex:1;min-width:250px}
-h1{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:38px;font-weight:600;letter-spacing:-.01em;line-height:1.15;color:var(--ink)}
-h1 .amber{color:var(--ink)}
-.tagline{margin-top:8px;font-size:17px;color:var(--ink);max-width:560px}
-.loc{margin-top:4px;color:var(--muted);font-size:15px;max-width:560px}
-.contact{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15.5px}
-.contact a{color:var(--link)}
-.contact a.primary{font-weight:600}
-img.portrait{width:172px;height:215px;object-fit:cover;object-position:top;border-radius:14px;border:1px solid var(--line);flex-shrink:0}
-
-/* sections */
-main section{margin-top:42px}
-h2{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-h3{font-size:16px;font-weight:600;margin:18px 0 6px}
-p{margin-bottom:12px}
-ul.plain{list-style:none;margin:0 0 14px}
-ul.plain li{position:relative;padding:3px 0 3px 20px}
-ul.plain li::before{content:"–";position:absolute;left:0;color:var(--faint)}
-ol{list-style:none;margin:0 0 14px;counter-reset:ol}
-ol li{position:relative;padding:4px 0 4px 26px;counter-increment:ol}
-ol li::before{content:counter(ol) ".";position:absolute;left:0;color:var(--faint);font-weight:600}
-
-/* job / entry rows */
-ul.jobs{list-style:none;margin:0}
-ul.jobs>li{padding:14px 0;border-bottom:1px solid var(--line)}
-.job-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
-.job-title{font-weight:600;font-size:16px}
-.job-org{font-size:14.5px;color:var(--muted);margin-top:2px}
-.job-loc{font-size:14.5px;color:var(--muted)}
-.job-when{font-size:13.5px;color:var(--faint);white-space:nowrap}
-ul.points{list-style:none;margin:8px 0 0}
-ul.points li{position:relative;padding:2px 0 2px 20px;font-size:15px;color:#3c382e}
-ul.points li::before{content:"–";position:absolute;left:0;color:var(--faint)}
-
-/* stats */
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin:6px 0 14px}
-.stat b{display:block;font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.01em}
-.stat span{font-size:13px;color:var(--muted);display:block;margin-top:2px}
-@media(min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
-
-/* documents + education */
-.doc-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
-.doc-row:last-child{border-bottom:none}
-.doc-name{font-size:16px}
-.doc-name small{display:block;color:var(--muted);font-size:14px;margin-top:1px}
-ul.roles{list-style:none;margin:0}
-ul.roles li{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
-ul.roles li:last-child{border-bottom:none}
-.role-name{font-size:15.5px;font-weight:600}
-.role-name small{display:block;color:var(--muted);font-size:14px;margin-top:1px;font-weight:400}
-.role-when{font-size:13.5px;color:var(--faint);white-space:nowrap}
-
-/* services page pieces */
-.pagehead{padding:6px 0 0}
-.sec-label{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:6px}
-.sec-note{font-size:14.5px;color:var(--muted);margin-bottom:18px}
-.hero-sub{margin-top:12px;font-size:16px;color:#3c382e;max-width:520px}
-.cta-row{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
-.cta{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 18px;border-radius:9px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--ink)}
-.cta:hover{border-color:var(--faint);text-decoration:none}
-.cta-primary{background:var(--ink);color:#fff;border-color:var(--ink)}
-.cta-primary:hover{color:#fff;background:#000}
-.cta-ghost{background:#fff}
-.hero-img{width:100%;max-height:430px;object-fit:cover;object-position:center 42%;border-radius:14px;margin-top:24px;display:block;border:1px solid var(--line)}
-.imgcap{font-size:11.5px;color:var(--faint);margin-top:8px}
-.svc-grid{display:grid;grid-template-columns:1fr;gap:10px}
-.svc{border:1px solid var(--line);border-radius:10px;padding:14px 16px}
-.svc-name{font-weight:600;font-size:15px}
-.svc-detail{font-size:14px;color:var(--muted);margin-top:5px;line-height:1.55}
-.svc-price{margin-top:9px;font-size:13px;color:var(--muted)}
-.svc-amt{font-size:15px;font-weight:600;color:var(--ink);margin-right:6px}
-@media(min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
-.steps-grid{display:grid;grid-template-columns:1fr;gap:10px}
-.step{border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;gap:13px;align-items:flex-start}
-.step-n{width:26px;height:26px;border-radius:50%;background:var(--ink);color:#fff;font-weight:600;font-size:12.5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.step-t{font-weight:600;font-size:14.5px}
-.step-d{font-size:13.5px;color:var(--muted);margin-top:2px}
-
-/* contact band + footer */
-.band{margin-top:46px;padding:34px 0 38px;border-top:1px solid var(--line)}
-.band-title{font-family:"Iowan Old Style",Palatino,Georgia,serif;font-size:24px;font-weight:600;letter-spacing:-.01em;color:var(--ink);max-width:440px;line-height:1.25}
-.band-sub{margin-top:8px;font-size:14.5px;color:var(--muted);max-width:480px}
-.band-cards{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
-.band-card{border:1px solid var(--line);border-radius:10px;padding:10px 15px;text-decoration:none;min-height:44px;display:inline-flex;flex-direction:column;justify-content:center}
-.band-card:hover{border-color:var(--faint);text-decoration:none}
-.band-lbl{font-size:9px;letter-spacing:2px;color:var(--faint);font-weight:600}
-.band-val{font-size:14px;font-weight:600;margin-top:3px;color:var(--ink)}
-footer{border-top:1px solid var(--line);margin-top:0;padding:20px 0 34px;color:var(--muted);font-size:13.5px}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 16px}
-footer a{color:var(--muted)}
-footer a:hover{color:var(--link)}
-@media(max-width:600px){h1{font-size:31px}.hero{gap:20px}}
-
-</style>
 <style id="afnan-dark-theme">/* Original Afnan CH dark studio theme. */
 :root{--ink:#f3f5f7;--muted:#b2bdc9;--faint:#8d9aa9;--line:#27333e;--paper:#080d13;--link:#57d9e6;--link-hover:#a1f3f8;--amber:#ff686e}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
@@ -287,19 +172,39 @@ form.cf{max-width:740px}.cf label{color:#e3eaf2}.cf input,.cf textarea{backgroun
 .home-hero img.portrait{width:100%;max-width:400px;height:auto;aspect-ratio:4/5;object-fit:cover}.hero-photo{width:100%;max-width:400px;justify-self:end}.hero-photo:after{font-size:10px;max-width:calc(100% - 36px)}@media(max-width:760px){.hero-photo{justify-self:start}.home-hero h1{font-size:58px}.home-hero img.portrait{max-width:360px}}
 
 body .points li,body .jobs .points li,body .job-desc,body .proj-desc,body .proj li{color:#c4ced8}body .stat span,body .job-when,body .job-loc{color:#b2bdc9}body .home-hero .loc{font-size:13px;line-height:1.8}
-</style><link href="/reference-ui.css" rel="stylesheet"/><link href="/company-carousel.css" rel="stylesheet"/></head>
+</style><link href="/reference-ui.css" rel="stylesheet"/><link href="/company-carousel.css" rel="stylesheet"/><link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="/premium.css" rel="stylesheet"/>
+</head>
 <body>
 <header class="sitehero"><div class="wrap"><a aria-label="Afnan CH home" class="personal-mark" href="/">ac<span>.</span></a><button aria-controls="shared-nav" aria-expanded="false" class="menu-toggle">[MENU]</button><nav class="sitenav" id="shared-nav"><a href="/#about">About</a><a href="/#experience">Experience</a><a href="/services">Services</a><a href="/digital-marketing-calicut">Digital marketing</a><a href="/projects">Projects</a><a href="/shopify-developer-calicut">Shopify</a><a href="/#documents">Documents</a><a href="/digital-marketing-dubai">Dubai marketing</a><a href="/shopify-developer-dubai">Dubai Shopify</a><a href="/contact">Contact</a></nav><button aria-label="Switch color theme" class="theme-toggle" title="Switch color theme">☾</button><a class="work-button" href="/contact">[WORK WITH ME]</a></div></header>
 <main class="wrap">
-<header class="hero home-hero" id="top"><div class="hero-text"><p class="hero-kicker">[TERMINAL_MODE] <span>· afnan@afnanch:~$</span></p><h1>Afnan CH:<br/><span class="hero-role">Digital Growth</span> &amp; Web</h1><p class="hero-summary"><b>&gt;</b> Digital marketing specialist &amp; web developer. SEO, content and e-commerce for brands in Calicut, Malappuram and beyond.</p><div class="hero-metrics"><div><strong>4+</strong><small>Years in marketing</small></div><div><strong>60K+</strong><small>Organic followers grown</small></div><div><strong>10M+</strong><small>Monthly views achieved</small></div></div><div class="hero-actions"><a href="/services">VIEW SERVICES</a><a href="/contact">DISCUSS A PROJECT</a></div></div><div class="hero-right"><div class="hero-photo"><img alt="Afnan CH, digital marketing specialist and web developer from Kerala" class="portrait" fetchpriority="high" height="1250" src="/afnan.jpg" width="1000"/></div><div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>afnan@afnanch - profile</span></div><div class="terminal-content"><p><b>$</b> whoami<br/><span>Afnan CH - Digital Marketer &amp; Web Developer</span></p><p><b>$</b> cat location.txt<br/><span>Calicut, Kerala, India</span></p><p><b>$</b> echo $CURRENT_STATUS<br/><em>Open to Dubai &amp; Gulf opportunities <b class="cursor">█</b></em></p></div></div></div><a class="scroll-cue" href="#services-overview">scroll<span>│</span></a></header><section aria-label="Companies and brands I have worked with" class="company-carousel"><p class="file-label">WORKED WITH / SELECTED BRANDS</p><div class="company-marquee"><div class="company-track"><div class="company-group"><figure><img alt="Sulfi Wooden Life" decoding="async" height="80" loading="lazy" src="/logos/sulfi.webp" width="160"/><figcaption>Sulfi Wooden Life</figcaption></figure><figure><img alt="TQ YOU Furniture" decoding="async" height="80" loading="lazy" src="/logos/tq-you.webp" width="160"/><figcaption>TQ YOU Furniture</figcaption></figure><figure><img alt="Dafo Production House" decoding="async" height="80" loading="lazy" src="/logos/dafo.webp" width="160"/><figcaption>Dafo Production House</figcaption></figure><figure><img alt="TC Roof Tiles" decoding="async" height="80" loading="lazy" src="/logos/tc-roof.webp" width="160"/><figcaption>TC Roof Tiles</figcaption></figure><figure><img alt="Bharani" decoding="async" height="80" loading="lazy" src="/logos/bharani.webp" width="160"/><figcaption>Bharani</figcaption></figure><figure><img alt="Softroniics" decoding="async" height="80" loading="lazy" src="/logos/softroniics.webp" width="160"/><figcaption>Softroniics</figcaption></figure><figure><img alt="Rahman World" decoding="async" height="80" loading="lazy" src="/logos/rahman-world.webp" width="160"/><figcaption>Rahman World</figcaption></figure><figure><img alt="Adsway" decoding="async" height="80" loading="lazy" src="/logos/adsway.webp" width="160"/><figcaption>Adsway</figcaption></figure><figure><img alt="Strive Digital" decoding="async" height="80" loading="lazy" src="/logos/strive.webp" width="160"/><figcaption>Strive Digital</figcaption></figure><figure><img alt="Armancarts" decoding="async" height="80" loading="lazy" src="/logos/armancarts.webp" width="160"/><figcaption>Armancarts</figcaption></figure><figure><img alt="Z Bake" decoding="async" height="80" loading="lazy" src="/logos/zbake.webp" width="160"/><figcaption>Z Bake</figcaption></figure><figure><img alt="K Wood" decoding="async" height="80" loading="lazy" src="/logos/kwood.webp" width="160"/><figcaption>K Wood</figcaption></figure></div><div aria-hidden="true" class="company-group"><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/sulfi.webp" width="160"/><figcaption>Sulfi Wooden Life</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/tq-you.webp" width="160"/><figcaption>TQ YOU Furniture</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/dafo.webp" width="160"/><figcaption>Dafo Production House</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/tc-roof.webp" width="160"/><figcaption>TC Roof Tiles</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/bharani.webp" width="160"/><figcaption>Bharani</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/softroniics.webp" width="160"/><figcaption>Softroniics</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/rahman-world.webp" width="160"/><figcaption>Rahman World</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/adsway.webp" width="160"/><figcaption>Adsway</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/strive.webp" width="160"/><figcaption>Strive Digital</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/armancarts.webp" width="160"/><figcaption>Armancarts</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/zbake.webp" width="160"/><figcaption>Z Bake</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/kwood.webp" width="160"/><figcaption>K Wood</figcaption></figure></div></div></div></section><section id="services-overview"><p class="file-label">SERVICES.MD</p><h2 class="display-title">Built for brands.<br/><span>Designed for growth.</span></h2><p class="code-line">01 // Search visibility.   02 // Better stores.   03 // Content that connects.</p><div class="reference-cards"><a class="reference-card" href="/digital-marketing-calicut"><span>01 / SEO &amp; STRATEGY</span><h3>Search visibility, with a plan.</h3><p>SEO, website structure and content strategy for businesses in Calicut, Malappuram and Dubai. Priorities agreed around your goals and measurement, without ranking guarantees.</p><small>#seo #analytics</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/shopify-developer-calicut"><span>02 / E-COMMERCE</span><h3>Stores made for real customers.</h3><p>Shopify and WordPress storefronts with clear product pages, mobile-friendly layouts, checkout setup and a practical launch process.</p><small>#shopify #web_development</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/projects"><span>03 / CONTENT &amp; SOCIAL</span><h3>Content with a clear purpose.</h3><p>Brand videos, reels and social content built around audience needs. Past work includes the Sulfi Wooden Life organic-growth campaign.</p><small>#content #social_media</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/services"><span>04 / PAID MEDIA</span><h3>Campaigns with measurable goals.</h3><p>Meta Ads, PPC and lead-generation planning, with agreed budgets, tracking and reporting. Your ad spend remains under your control.</p><small>#meta_ads #lead_generation</small><b>EXPLORE SERVICE ↗</b></a></div></section><section class="methodology"><p class="file-label">PROCESS.MD</p><h2 class="display-title">From brief<br/><span>to better work.</span></h2><div class="process-grid"><article><b>01</b><h3>UNDERSTAND</h3><p>Agree on the business goal, audience, scope and measurement before work begins.</p></article><article><b>02</b><h3>BUILD</h3><p>Create the website, content or campaign around that brief, with clear checkpoints.</p></article><article><b>03</b><h3>IMPROVE</h3><p>Review the evidence, identify what is working and choose the next improvement.</p></article></div></section>
+<header class="hero home-hero" id="top"><div class="hero-text"><p class="hero-kicker">Afnan CH · Portfolio 2026</p><h1>Afnan CH:<br/><span class="hero-role">Digital Growth</span> &amp; Web</h1><p class="hero-summary"><b>&gt;</b> Digital marketing specialist &amp; web developer. SEO, content and e-commerce for brands in Calicut, Malappuram and beyond.</p><div class="hero-metrics"><div><strong>4+</strong><small>Years in marketing</small></div><div><strong>60K+</strong><small>Organic followers grown</small></div><div><strong>10M+</strong><small>Monthly views achieved</small></div></div><div class="hero-actions"><a href="/services">VIEW SERVICES</a><a href="/contact">DISCUSS A PROJECT</a></div></div><div class="hero-right"><div class="hero-photo"><img alt="Afnan CH, digital marketing specialist and web developer from Kerala" class="portrait" fetchpriority="high" height="1250" src="/assets/portrait-cutout.webp" width="1000"/></div><span class="p-float-pill lime" style="top:6%;left:-4%;--r:-6deg">SEO</span><span class="p-float-pill purple" style="top:22%;right:-6%;--r:4deg;animation-delay:.6s">Shopify</span><span class="p-float-pill blue" style="bottom:30%;left:-10%;--r:3deg;animation-delay:1.2s">Meta Ads</span><span class="p-float-pill yellow" style="bottom:12%;right:-2%;--r:-4deg;animation-delay:1.8s">Content</span><svg class="p-spark" style="top:-4%;right:16%" width="34" height="34" viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg><svg class="p-spark" style="bottom:2%;left:6%;animation-delay:1.4s" width="22" height="22" viewBox="0 0 24 24" fill="#d3f34f"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg><div class="terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>afnan@afnanch - profile</span></div><div class="terminal-content"><p><b>$</b> whoami<br/><span>Afnan CH - Digital Marketer &amp; Web Developer</span></p><p><b>$</b> cat location.txt<br/><span>Calicut, Kerala, India</span></p><p><b>$</b> echo $CURRENT_STATUS<br/><em>Open to Dubai &amp; Gulf opportunities <b class="cursor">█</b></em></p></div></div></div><a class="scroll-cue" href="#services-overview">scroll<span>│</span></a></header>
+</main>
+<div class="p-marquee" aria-hidden="true"><div class="p-marquee-track"><span>Digital Marketing <i>✦</i> Shopify <i>✦</i> SEO <i>✦</i> Meta Ads <i>✦</i> Content <i>✦</i> Web Development <i>✦</i></span><span>Digital Marketing <i>✦</i> Shopify <i>✦</i> SEO <i>✦</i> Meta Ads <i>✦</i> Content <i>✦</i> Web Development <i>✦</i></span></div></div>
+<main class="wrap">
+<section aria-label="Companies and brands I have worked with" class="company-carousel"><p class="file-label">WORKED WITH / SELECTED BRANDS</p><h2 class="display-title" style="font-size:clamp(26px,3.4vw,40px)">Brands that <span class="p-hl">trusted the work.</span></h2><div class="company-marquee"><div class="company-track"><div class="company-group"><figure><img alt="Sulfi Wooden Life" decoding="async" height="80" loading="lazy" src="/logos/sulfi.webp" width="160"/><figcaption>Sulfi Wooden Life</figcaption></figure><figure><img alt="TQ YOU Furniture" decoding="async" height="80" loading="lazy" src="/logos/tq-you.webp" width="160"/><figcaption>TQ YOU Furniture</figcaption></figure><figure><img alt="Dafo Production House" decoding="async" height="80" loading="lazy" src="/logos/dafo.webp" width="160"/><figcaption>Dafo Production House</figcaption></figure><figure><img alt="TC Roof Tiles" decoding="async" height="80" loading="lazy" src="/logos/tc-roof.webp" width="160"/><figcaption>TC Roof Tiles</figcaption></figure><figure><img alt="Bharani" decoding="async" height="80" loading="lazy" src="/logos/bharani.webp" width="160"/><figcaption>Bharani</figcaption></figure><figure><img alt="Softroniics" decoding="async" height="80" loading="lazy" src="/logos/softroniics.webp" width="160"/><figcaption>Softroniics</figcaption></figure><figure><img alt="Rahman World" decoding="async" height="80" loading="lazy" src="/logos/rahman-world.webp" width="160"/><figcaption>Rahman World</figcaption></figure><figure><img alt="Adsway" decoding="async" height="80" loading="lazy" src="/logos/adsway.webp" width="160"/><figcaption>Adsway</figcaption></figure><figure><img alt="Strive Digital" decoding="async" height="80" loading="lazy" src="/logos/strive.webp" width="160"/><figcaption>Strive Digital</figcaption></figure><figure><img alt="Armancarts" decoding="async" height="80" loading="lazy" src="/logos/armancarts.webp" width="160"/><figcaption>Armancarts</figcaption></figure><figure><img alt="Z Bake" decoding="async" height="80" loading="lazy" src="/logos/zbake.webp" width="160"/><figcaption>Z Bake</figcaption></figure><figure><img alt="K Wood" decoding="async" height="80" loading="lazy" src="/logos/kwood.webp" width="160"/><figcaption>K Wood</figcaption></figure></div><div aria-hidden="true" class="company-group"><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/sulfi.webp" width="160"/><figcaption>Sulfi Wooden Life</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/tq-you.webp" width="160"/><figcaption>TQ YOU Furniture</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/dafo.webp" width="160"/><figcaption>Dafo Production House</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/tc-roof.webp" width="160"/><figcaption>TC Roof Tiles</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/bharani.webp" width="160"/><figcaption>Bharani</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/softroniics.webp" width="160"/><figcaption>Softroniics</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/rahman-world.webp" width="160"/><figcaption>Rahman World</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/adsway.webp" width="160"/><figcaption>Adsway</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/strive.webp" width="160"/><figcaption>Strive Digital</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/armancarts.webp" width="160"/><figcaption>Armancarts</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/zbake.webp" width="160"/><figcaption>Z Bake</figcaption></figure><figure><img alt="" decoding="async" height="80" loading="lazy" src="/logos/kwood.webp" width="160"/><figcaption>K Wood</figcaption></figure></div></div></div></section>
+<section id="services-overview"><p class="file-label">SERVICES.MD</p><h2 class="display-title">Built for brands.<br/><span>Designed for growth.</span></h2><p class="code-line">01 // Search visibility. &nbsp; 02 // Better stores. &nbsp; 03 // Content that connects.</p><div class="reference-cards"><a class="reference-card" href="/digital-marketing-calicut"><span>01 / SEO &amp; STRATEGY</span><h3>Search visibility, with a plan.</h3><p>SEO, website structure and content strategy for businesses in Calicut, Malappuram and Dubai. Priorities agreed around your goals and measurement, without ranking guarantees.</p><small>#seo #analytics</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/shopify-developer-calicut"><span>02 / E-COMMERCE</span><h3>Stores made for real customers.</h3><p>Shopify and WordPress storefronts with clear product pages, mobile-friendly layouts, checkout setup and a practical launch process.</p><small>#shopify #web_development</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/projects"><span>03 / CONTENT &amp; SOCIAL</span><h3>Content with a clear purpose.</h3><p>Brand videos, reels and social content built around audience needs. Past work includes the Sulfi Wooden Life organic-growth campaign.</p><small>#content #social_media</small><b>EXPLORE SERVICE ↗</b></a><a class="reference-card" href="/services"><span>04 / PAID MEDIA</span><h3>Campaigns with measurable goals.</h3><p>Meta Ads, PPC and lead-generation planning, with agreed budgets, tracking and reporting. Your ad spend remains under your control.</p><small>#meta_ads #lead_generation</small><b>EXPLORE SERVICE ↗</b></a></div></section>
+<section class="methodology"><p class="file-label">PROCESS.MD</p><h2 class="display-title">From brief<br/><span>to better work.</span></h2><div class="process-grid"><article><b>01</b><h3>UNDERSTAND</h3><p>Agree on the business goal, audience, scope and measurement before work begins.</p></article><article><b>02</b><h3>BUILD</h3><p>Create the website, content or campaign around that brief, with clear checkpoints.</p></article><article><b>03</b><h3>IMPROVE</h3><p>Review the evidence, identify what is working and choose the next improvement.</p></article></div></section>
 <section id="about">
-<p class="file-label">ABOUT.MD</p><h2 class="display-title">About</h2>
+<p class="file-label">ABOUT.MD</p><h2 class="display-title">The person behind<br/><span>the growth numbers.</span></h2>
+<div class="p-editorial"><img class="p-editorial-img" alt="Creative workspace of Afnan CH - digital marketing and web development desk" decoding="async" loading="lazy" src="/assets/workspace.webp"/><div>
 <p>I'm a digital marketing specialist and web developer from Kerala, India, with 4+ years of experience growing brands online across Meta Ads, SEO, PPC, social media and content strategy.</p>
 <p>At DAFO Industries I scaled the Sulfi Wooden Life brand from 0 to 60,000+ Instagram followers organically in 4 months, generating 10M+ monthly views and 5,000+ business inquiries, and enabled page monetization earning $100+ in monthly income.</p>
 <p>I build and run websites and e-commerce stores with WordPress, Shopify and AI-assisted development, and I've delivered professional digital marketing training in Dubai, UAE, with direct exposure to Gulf consumer behavior and Arabic-market targeting.</p>
-</section><section id="marketing"><p class="file-label">MORE.MD</p><h2 class="display-title">More</h2><p><a href="/digital-marketing-calicut">Digital marketing in Calicut &amp; Malappuram</a> - SEO, social media, Meta Ads and Shopify development with verifiable results. Packages and starting rates are on the <a href="/services">services page</a>.</p></section>
-<section>
-<p class="file-label">CURRENTLY.MD</p><h2 class="display-title">Currently</h2>
+</div></div>
+</section>
+<section><p class="file-label">SELECTED_RESULTS.MD</p><h2 class="display-title">Results that<br/><span>speak first.</span></h2>
+<div class="stats">
+<div class="stat"><b>60K+</b><span>followers grown organically in 4 months</span></div>
+<div class="stat"><b>10M+</b><span>monthly organic views</span></div>
+<div class="stat"><b>5,000+</b><span>business inquiries generated</span></div>
+<div class="stat"><b>500+</b><span>reels &amp; videos shot and directed</span></div>
+</div>
+</section>
+<section id="experience">
+<p class="file-label">EXPERIENCE.MD</p><h2 class="display-title">Experience</h2>
 <ul class="jobs">
 <li>
 <div class="job-head">
@@ -314,20 +219,6 @@ body .points li,body .jobs .points li,body .job-desc,body .proj-desc,body .proj 
 <li>Installable mobile web store with online payments and cash-on-delivery checkout</li>
 </ul>
 </li>
-</ul>
-</section>
-<section>
-<p class="file-label">SELECTED_RESULTS.MD</p><h2 class="display-title">Selected Results</h2>
-<div class="stats">
-<div class="stat"><b>60K+</b><span>followers grown organically in 4 months</span></div>
-<div class="stat"><b>10M+</b><span>monthly organic views</span></div>
-<div class="stat"><b>5,000+</b><span>business inquiries generated</span></div>
-<div class="stat"><b>500+</b><span>reels &amp; videos shot and directed</span></div>
-</div>
-</section>
-<section id="experience">
-<p class="file-label">EXPERIENCE.MD</p><h2 class="display-title">Experience</h2>
-<ul class="jobs">
 <li>
 <div class="job-head">
 <div>
@@ -399,33 +290,58 @@ body .points li,body .jobs .points li,body .job-desc,body .proj-desc,body .proj 
 </section>
 <section>
 <p class="file-label">SKILLS.MD</p><h2 class="display-title">Skills</h2>
-<ul class="plain">
-<li><b>Advertising &amp; paid media:</b> Meta Ads, PPC, paid social, Snapchat Ads (GCC), TikTok marketing, Google Ads (basic)</li>
-<li><b>SEO &amp; analytics:</b> SEO, SEM, Google Analytics, Tag Manager, Search Console, SEMrush</li>
-<li><b>Content &amp; social:</b> content strategy, reel &amp; video production, copywriting, influencer marketing (KSA), brand building</li>
-<li><b>Web &amp; product:</b> WordPress, Shopify, e-commerce setup, AI-assisted development, UX testing</li>
-<li><b>Growth:</b> lead generation, CRO, A/B testing, funnels, email marketing &amp; automation, CRM workflows</li>
-</ul>
+<div class="p-skillcloud"><span>Meta Ads</span><span>PPC</span><span>Paid social</span><span>Snapchat Ads (GCC)</span><span>TikTok marketing</span><span>Google Ads (basic)</span><span>SEO</span><span>SEM</span><span>Google Analytics</span><span>Tag Manager</span><span>Search Console</span><span>SEMrush</span><span>Content strategy</span><span>Reel &amp; video production</span><span>Copywriting</span><span>Influencer marketing (KSA)</span><span>Brand building</span><span>WordPress</span><span>Shopify</span><span>E-commerce setup</span><span>AI-assisted development</span><span>UX testing</span><span>Lead generation</span><span>CRO</span><span>A/B testing</span><span>Funnels</span><span>Email marketing &amp; automation</span><span>CRM workflows</span></div>
 </section>
 <section id="projects-teaser">
-<p class="file-label">PROJECTS.MD</p><h2 class="display-title">Projects</h2>
-<ul class="jobs">
-<li>
-<div class="job-head">
-<div>
-<div class="job-title"><a href="/projects">Armancarts, Bharani Snacks, cloud &amp; WhatsApp automation</a></div>
-<div class="job-loc">Selected client and personal work, with links</div>
+<p class="file-label">PROJECTS.MD</p><h2 class="display-title">Selected <span>work.</span></h2>
+<div class="p-projects">
+<a class="p-project" href="https://armancarts.com"><img alt="Armancarts - premium fashion and accessories e-commerce brand" decoding="async" loading="lazy" src="/assets/project-armancarts.webp"/><div class="p-project-body"><span>FOUNDER · E-COMMERCE</span><h3>Armancarts</h3><p>Premium fashion &amp; accessories e-commerce: watches, footwear, clothing, bags and leather goods. Storefront designed and launched as an installable mobile web app.</p></div></a>
+<a class="p-project" href="https://www.linkedin.com/posts/afnanch_digitalmarketing-healthysnacks-bananachips-activity-7234910940721266688-qmIM"><img alt="Bharani Snacks - Shopify e-commerce website for a Kerala snacks brand" decoding="async" loading="lazy" src="/assets/project-bharani.webp"/><div class="p-project-body"><span>SHOPIFY · CLIENT WORK</span><h3>Bharani Snacks</h3><p>Shopify-based e-commerce platform for a Kerala snacks brand, with brand content and product video for launch campaigns.</p></div></a>
+<a class="p-project" href="https://www.instagram.com/sulfi_woodenlife"><img alt="Sulfi Wooden Life - organic Instagram growth campaign for a wooden furniture brand" decoding="async" loading="lazy" src="/assets/project-sulfi.webp"/><div class="p-project-body"><span>ORGANIC GROWTH · 0 → 60K</span><h3>Sulfi Wooden Life</h3><p>Scaled the brand from 0 to 60,000+ Instagram followers organically in 4 months - 10M+ monthly views and 5,000+ business inquiries.</p></div></a>
+<a class="p-project" href="/projects"><img alt="Cloud and WhatsApp automation built for Armancarts" decoding="async" loading="lazy" src="/assets/project-automation.webp"/><div class="p-project-body"><span>INFRASTRUCTURE · AUTOMATION</span><h3>Cloud &amp; WhatsApp automation</h3><p>Self-managed Ubuntu server running 24/7, a WhatsApp customer-support assistant and automated order messaging - built and run solo.</p></div></a>
 </div>
-<span class="job-when"><a href="/projects">View all</a></span>
-</div>
-</li>
-</ul>
 </section>
+<section id="marketing"><p class="file-label">MORE.MD</p><h2 class="display-title">More</h2><p><a href="/digital-marketing-calicut">Digital marketing in Calicut &amp; Malappuram</a> - SEO, social media, Meta Ads and Shopify development with verifiable results. Packages and starting rates are on the <a href="/services">services page</a>. If search visibility is the priority, start with my <a href="/seo-expert-calicut">SEO expert in Calicut</a> page.</p><p>New: <a href="/digital-marketing-2027">my digital marketing outlook for 2027</a> - AI search, short video, local SEO and WhatsApp for Dubai, Saudi Arabia and Kerala.</p></section>
 <section id="documents">
 <p class="file-label">DOCUMENTS.MD</p><h2 class="display-title">Documents</h2>
 <div class="doc-row">
 <div class="doc-name"><a href="/Afnan_CH_CV.pdf">Curriculum Vitae (PDF)</a><small>Digital Marketing Specialist - updated October 2026</small></div>
 <span class="job-when"><a href="/Afnan_CH_CV.pdf">Download</a></span>
+</div>
+</section>
+<section id="guides">
+<p class="file-label">GUIDES.MD</p><h2 class="display-title">Guides</h2>
+<div class="doc-row">
+<div class="doc-name"><a href="/hire-shopify-developer-dubai">Hiring a Shopify developer in Dubai (2026)</a><small>Costs in AED, local vs remote, and the questions that filter out bad hires</small></div>
+<span class="job-when"><a href="/hire-shopify-developer-dubai">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/shopify-store-cost-dubai">Shopify store cost in Dubai &amp; the UAE (2026)</a><small>Plan fees, themes, apps, gateways, development and VAT - honest ranges</small></div>
+<span class="job-when"><a href="/shopify-store-cost-dubai">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/shopify-store-cost-saudi-arabia">Shopify store cost in Saudi Arabia (2026)</a><small>Plans in SAR, gateways like mada and Tabby, ZATCA e-invoicing basics</small></div>
+<span class="job-when"><a href="/shopify-store-cost-saudi-arabia">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/digital-marketing-cost-dubai">Digital marketing cost in Dubai (2026)</a><small>What SEO, social and ads actually cost for UAE businesses</small></div>
+<span class="job-when"><a href="/digital-marketing-cost-dubai">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/digital-marketing-saudi-arabia">Digital marketing for Saudi Arabia</a><small>Remote-first marketing support for KSA businesses</small></div>
+<span class="job-when"><a href="/digital-marketing-saudi-arabia">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/digital-marketing-cost-kerala">Digital marketing cost in Kerala (2026)</a><small>Honest monthly ranges for SEO, social media and ads in Kerala</small></div>
+<span class="job-when"><a href="/digital-marketing-cost-kerala">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/digital-marketing-cost-malappuram">Digital marketing cost in Malappuram (2026)</a><small>Local pricing guide for Malappuram district businesses</small></div>
+<span class="job-when"><a href="/digital-marketing-cost-malappuram">Read</a></span>
+</div>
+<div class="doc-row">
+<div class="doc-name"><a href="/wordpress-vs-shopify-kerala">WordPress vs Shopify for Kerala businesses</a><small>Which platform fits which kind of business, with real costs</small></div>
+<span class="job-when"><a href="/wordpress-vs-shopify-kerala">Read</a></span>
 </div>
 </section>
 <section>
